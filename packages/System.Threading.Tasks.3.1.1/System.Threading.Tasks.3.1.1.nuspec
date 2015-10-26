@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>System.Threading.Tasks</id>
+    <version>3.1.1</version>
+    <title>Task Parallel Library for Silverlight, Windows Phone, and .NET 3.5</title>
+    <authors>Robert McLaws, Jrmie "Garuma" Laval</authors>
+    <owners>Robert McLaws, Jrmie "Garuma" Laval</owners>
+    <licenseUrl>http://www.mono-project.com/Licensing</licenseUrl>
+    <projectUrl>http://robertmclaws.com/nuget-packages/system-threading-tasks-for-silverlight</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>**NOTE: This package has moved to System.Threading.Tasks.Unofficial**
+
+This package is a port of the Mono version of the *complete* Task Parallel Library (not a subset) to .NET 3.5, as well as all Silverlight platforms, including Windows Phone 7.x. This version contains more classes (and is namespace compatible with the BCL) compared to the PortableTPL project. This project supercedes the TaskParallelLibrary.WP7 package, and is licensed under the same licenses as the rest of the Mono framework.</description>
+    <summary>**NOTE: This package has moved to System.Threading.Tasks.Unofficial**
+
+This package is a port of the Mono version of the complete Task Parallel Library (not a subset) to .NET 3.5, SL3-5, and WP7.x.</summary>
+    <releaseNotes>Version 3.1 - Make this package dependent on the new home for this library, so that Microsoft can take over future versions of this package for the official .NET Framework bits.
+
+Version 3.0.2 - Adds the [SecurityCritical] attribute where necessary to enable MEF support. - Removes System.Threading.Timer and TimerCallback from SL4, as they are already in the BCL. - Adds PDB files to aid in debugging issues.
+
+Version 3.0.1 - Removes the Func&lt;&gt; definitions from SL5, as they are already in the core runtime.
+
+Version 3.0 - Updates the package to Mono 2.12. Excludes the Task.Unwrap() function from SL5. Adds support for .NET 3.5. See Project Site for more details.
+
+Version 2.1.2 - Fixes a bug in Task.FromAsync() that does not return the TaskState in certain situations.
+
+Version 2.1 - This version adds support for Silverlight 5, removing the classes (Primarily in System.Threading.Tasks) now included in the core runtime.</releaseNotes>
+    <copyright />
+    <language />
+    <tags>TPL</tags>
+    <dependencies>
+      <dependency id="System.Threading.Tasks.Unofficial" version="3.1" />
+    </dependencies>
+  </metadata>
+</package>
